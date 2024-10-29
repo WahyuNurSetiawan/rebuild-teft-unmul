@@ -93,8 +93,7 @@ body {
   background-position: center;
 }
 
-/* Versi Asli */
-/* .hero::after {
+.hero::after {
   content: "";
   display: block;
   position: absolute;
@@ -106,31 +105,9 @@ body {
     rgba(1, 1, 3, 1) 10%,
     rgba(255, 255, 255, 0) 50%
   );
-} */
-
-/* Versi Editan */
-.hero {
-  position: relative; /* Tambahkan posisi relatif untuk referensi overlay */
-}
-
-.hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 250%; /* Sesuaikan lebar overlay agar tidak terlalu lebar */
-  height: 100%; /* Membuat overlay setinggi elemen .hero */
-  left: 0; /* Menempatkan overlay di bagian kiri */
-  background: linear-gradient(
-    90deg,
-    rgba(1, 1, 3, 1) 10%, /* Warna gelap solid di sisi kiri overlay */
-    rgba(255, 255, 255, 0) 50% /* Warna transparan di sisi kanan overlay */
-  );
-  z-index: 1; /* Pastikan overlay berada di bawah konten */
 }
 
 .hero .content {
-  position: relative; /* Pastikan konten memiliki posisi relatif */
-  z-index: 2; /* Letakkan konten di atas overlay */
   padding: 1.4rem 7%;
   max-width: 60rem;
 }
@@ -140,55 +117,7 @@ body {
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
-}
-
-.hero .content h1 span {
-  color: var(--primary);
-}
-
-.hero .content h2 {
-  font-size: 3em;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  line-height: 1.2;
-}
-
-.hero .content h2 span {
-  color: var(--primary);
-}
-
-.hero .content p {
-  font-size: 1.6rem;
-  margin-top: 0.5rem;
-  line-height: 1.4;
-  font-weight: 100;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-}
-
-.hero .content .cta {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.4rem;
-  color: #fff;
-  background-color: var(--primary);
-  border-radius: 0.5rem;
-  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-}
-
-/* Akhir Editan */
-
-/* .hero .content {
-  padding: 1.4rem 7%;
-  max-width: 60rem;
-}
-
-.hero .content h1 {
-  font-size: 5em;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  line-height: 1.2;
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
 }
 
 .hero .content h1 span {
@@ -214,7 +143,7 @@ body {
   background-color: var(--primary);
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5em);
-} */
+}
 
 /* About Section */
 .about,
