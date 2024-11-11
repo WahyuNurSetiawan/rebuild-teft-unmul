@@ -60,7 +60,6 @@ body {
   color: var(--primary);
 }
 
-
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
@@ -262,14 +261,13 @@ body {
     font-weight: 700;
     color: #fff;
   }
-  
+
   .navbar .navbar-logo span {
     display: block;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--primary);
   }
-
 
   #hamburger-menu {
     display: inline-block;
@@ -323,7 +321,6 @@ body {
     font-size: 1.6rem;
   }
 }
-
 
 /* Mobile Phone */
 @media (max-width: 450px) {
