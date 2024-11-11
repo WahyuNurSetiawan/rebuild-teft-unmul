@@ -38,12 +38,10 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
+  font-style: italic;
 }
 
 .navbar .navbar-logo span {
-  display: block;
-  font-size: 1rem;
-  font-weight: 400;
   color: var(--primary);
 }
 
@@ -71,20 +69,18 @@ body {
   transform: scaleX(0.5);
 }
 
-.navbar .navbar-nav .dropdown {
-  position: relative;
-}
-
 .navbar .navbar-extra a {
   color: #fff;
   margin: 0 0.5rem;
 }
 
+.navbar .navbar-extra a::hover {
+  color: var(--primary);
+}
 
 #hamburger-menu {
   display: none;
 }
-
 
 /* Hero Section */
 .hero {
